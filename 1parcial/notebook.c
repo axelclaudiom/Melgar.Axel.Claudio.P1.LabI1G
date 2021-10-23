@@ -15,6 +15,7 @@ int menu()
     printf("E - Listar Marcas \n");
     printf("F - Listar Tipos \n");
     printf("G - Listar Servicios \n");
+    printf("H - Alta Trabajo \n");
     printf("Z - Salir \n");
     printf("Ingrese opcion: ");
     scanf("%c", &opcion);

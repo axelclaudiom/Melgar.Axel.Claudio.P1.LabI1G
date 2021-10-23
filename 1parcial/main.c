@@ -4,21 +4,22 @@
 #include "servicio.h"
 #include "marca.h"
 #include "dataharc.h"
-//#include "trabajo.h"
+#include "trabajo.h"
 
 #define TAM_N 5
 #define TAM_M 4
 #define TAM_T 4
 #define TAM_S 4
+#define TAM_TT 5
 
 int main()
 {
     char seguir = 's';
 
     eNotebook notebooks[TAM_N];
-    //eTrabajo trabajos[TAM_T];
+    eTrabajo trabajos[TAM_T];
     int nextIdNotebook = 50000;
-    //int nextIdTrabajo = 90000;
+    int nextIdTrabajo = 90000;
 
     eMarca marcas[TAM_M] = {
     {1000, "Compq"},
@@ -86,6 +87,9 @@ int main()
             break;
         case 'g':
             mostrarServicios(servicios,TAM_S);
+        break;
+        case 'h':
+            altaTrabajo(trabajos, TAM_TT, notebooks,TAM_N,marcas,TAM_M,tipos,TAM_T,servicios,TAM_S,&nextIdTrabajo);
         break;
         case 20:
             printf("salir \n");

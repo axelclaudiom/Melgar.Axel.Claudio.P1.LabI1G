@@ -1,13 +1,14 @@
 # depslib dependency file v1.0
 1634939593 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\fecha.c
 
-1634950295 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\main.c
+1634950831 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\main.c
 	<stdio.h>
 	<stdlib.h>
 	"notebook.h"
 	"servicio.h"
 	"marca.h"
 	"dataharc.h"
+	"trabajo.h"
 
 1634948824 c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\notebook.h
 	"marca.h"
@@ -32,7 +33,7 @@
 
 1634942614 c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\tipo.h
 
-1634948921 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\notebook.c
+1634950457 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\notebook.c
 	<stdio.h>
 	<stdlib.h>
 	"notebook.h"
@@ -47,10 +48,19 @@
 	<string.h>
 	"dataharc.h"
 
-1634950172 c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\trabajo.h
+1634951109 c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\trabajo.h
 	"fecha.h"
+	"notebook.h"
+	"servicio.h"
 
 1634939651 c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\fecha.h
 
-1634950331 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\trabajo.c
+1634951141 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\trabajo.c
+	<stdio.h>
+	<stdlib.h>
+	"trabajo.h"
+	"notebook.h"
+	"tipo.h"
+	"marca.h"
+	"servicio.h"
 
