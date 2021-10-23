@@ -82,3 +82,18 @@ int altaTrabajo(eTrabajo trabajos[], int tam_tt , eNotebook notebooks[], int tam
 
     return todoOk;
 }
+
+int mostrarTrabajos(eTrabajo trabajos[], int tam_tt){
+    int todoOk = 0;
+    if(trabajos != NULL && tam_tt > 0){
+    //system("cls");
+    printf("| *** Trabajos *** | \n\n");
+    printf("     Id      servicio  \n");
+        for(int i = 0; i<tam_tt; i++){
+            printf("   %d     %d     \n", trabajos[i].id, trabajos[i].idServicio);
+        }
+
+        todoOk = 1;
+    }
+    return todoOk;
+}

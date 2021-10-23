@@ -17,3 +17,4 @@ typedef struct{
 
 int altaTrabajo(eTrabajo trabajos[], int tam_tt , eNotebook notebooks[], int tam_n, eMarca marcas[], int tam_m, eTipo tipos[], int tam_t , eServicio servicios[], int tam_s, int* pId);
 int buscarLibreT(eTrabajo trabajos[], int tam_tt);
+int mostrarTrabajos(eTrabajo trabajos[], int tam_tt);

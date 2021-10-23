@@ -91,6 +91,9 @@ int main()
         case 'h':
             altaTrabajo(trabajos, TAM_TT, notebooks,TAM_N,marcas,TAM_M,tipos,TAM_T,servicios,TAM_S,&nextIdTrabajo);
         break;
+        case 'i':
+            mostrarTrabajos(trabajos,TAM_TT);
+        break;
         case 20:
             printf("salir \n");
             seguir = 'n';
