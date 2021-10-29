@@ -16,6 +16,8 @@ int tipos[5] = {5000,5001,5000,5003,5002};
 
 float precios[5] = {3000,7000,2000,5000,3000};
 
+int clientes[5] = {30000, 30001, 30002,30000,30001};
+
 int hardcodearNotebooks(eNotebook notebooks[], int tam_n, int cant, int* pId)
 {
     int contador = -1;
@@ -27,6 +29,7 @@ int hardcodearNotebooks(eNotebook notebooks[], int tam_n, int cant, int* pId)
                 strcpy(notebooks[i].modelo, modelo[i]);
                 notebooks[i].idMarca = marcas[i];
                 notebooks[i].idTipo=tipos[i];
+                notebooks[i].idCliente=clientes[i];
                 notebooks[i].precio=precios[i];
                 notebooks[i].isEmpty = 0;
                 contador++;
@@ -39,7 +42,7 @@ int hardcodearNotebooks(eNotebook notebooks[], int tam_n, int cant, int* pId)
 int notebooks[5] = {50000, 50002,50000,50001,50003};
 int servicios[5] = {20000,20001,20003,20000,20004};
 int fechadia[5] = {8,5,3,4,9};
-int fechames[5] = {04,01,07,05,07};
+int fechames[5] = {4,1,7,5,7};
 int fechaanio[5] = {2001,2003,2006,2010,2015};
 
 

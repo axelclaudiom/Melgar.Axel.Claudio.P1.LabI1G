@@ -1,0 +1,342 @@
+# depslib dependency file v1.0
+1634939593 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\fecha.c
+
+1635478586 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"notebook.h"
+	"servicio.h"
+	"marca.h"
+	"dataharc.h"
+	"trabajo.h"
+
+1634961500 c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\notebook.h
+	"marca.h"
+	"tipo.h"
+
+1634943116 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\marca.c
+	<stdio.h>
+	<stdlib.h>
+	"marca.h"
+
+1634946265 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\servicio.c
+	<stdio.h>
+	<stdlib.h>
+	"servicio.h"
+
+1634943135 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\tipo.c
+	<stdio.h>
+	<stdlib.h>
+	"tipo.h"
+
+1634948817 c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\marca.h
+
+1634942614 c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\tipo.h
+
+1635465855 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\notebook.c
+	<stdio.h>
+	<stdlib.h>
+	"notebook.h"
+	<strings.h>
+	"inputs.h"
+
+1634946262 c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\servicio.h
+
+1635477654 c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\dataharc.h
+	"notebook.h"
+	"trabajo.h"
+
+1635477701 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\dataharc.c
+	<string.h>
+	"dataharc.h"
+
+1634962775 c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\trabajo.h
+	"fecha.h"
+	"notebook.h"
+	"servicio.h"
+
+1634939651 c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\fecha.h
+
+1635466819 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\trabajo.c
+	<stdio.h>
+	<stdlib.h>
+	"trabajo.h"
+	"notebook.h"
+	"tipo.h"
+	"marca.h"
+	"servicio.h"
+	"inputs.h"
+
+1635464508 source:c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\inputs.c
+	"inputs.h"
+
+1635463302 c:\users\axel\desktop\melgar.axel.claudio.p1.labi1g\1parcial\inputs.h
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"ctype.h"
+
+1634939593 source:c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\fecha.c
+
+1634943116 source:c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\marca.c
+	<stdio.h>
+	<stdlib.h>
+	"marca.h"
+
+1635482056 c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\marca.h
+
+1635539029 source:c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\servicio.c
+	<stdio.h>
+	<stdlib.h>
+	"servicio.h"
+
+1635483191 c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\servicio.h
+
+1635520855 source:c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\tipo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tipo.h"
+
+1635483377 c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\tipo.h
+
+1635542669 source:c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\trabajo.c
+	<stdio.h>
+	<stdlib.h>
+	"trabajo.h"
+	"inputs.h"
+
+1635542674 c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\trabajo.h
+	"fecha.h"
+	"servicio.h"
+	"notebook.h"
+
+1634939651 c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\fecha.h
+
+1635537095 c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\notebook.h
+	"marca.h"
+	"tipo.h"
+	"cliente.h"
+
+1635463302 c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\inputs.h
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"ctype.h"
+
+1635530715 source:c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\dataharc.c
+	<string.h>
+	"dataharc.h"
+
+1635481840 c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\dataharc.h
+	"notebook.h"
+	"trabajo.h"
+
+1635480306 source:c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\inputs.c
+	"inputs.h"
+
+1635542713 source:c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\main.c
+	<stdio.h>
+	<stdlib.h>
+	"notebook.h"
+	"servicio.h"
+	"marca.h"
+	"dataharc.h"
+	"trabajo.h"
+	"cliente.h"
+
+1635536745 c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\cliente.h
+
+1635540268 source:c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\notebook.c
+	<stdio.h>
+	<stdlib.h>
+	"notebook.h"
+	<strings.h>
+	"inputs.h"
+
+1635536778 source:c:\users\axel\desktop\programacion\practica clases\parcial1 posible mod\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	"notebook.h"
+	<strings.h>
+	"inputs.h"
+	"cliente.h"
+
+1635536778 source:c:\users\axel\desktop\parcial1 informes\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	"notebook.h"
+	<strings.h>
+	"inputs.h"
+	"cliente.h"
+
+1635546539 c:\users\axel\desktop\parcial1 informes\notebook.h
+	"marca.h"
+	"tipo.h"
+	"cliente.h"
+
+1635482056 c:\users\axel\desktop\parcial1 informes\marca.h
+
+1635483377 c:\users\axel\desktop\parcial1 informes\tipo.h
+
+1635545800 c:\users\axel\desktop\parcial1 informes\cliente.h
+
+1635463302 c:\users\axel\desktop\parcial1 informes\inputs.h
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"ctype.h"
+
+1635542901 source:c:\users\axel\desktop\parcial1 informes\dataharc.c
+	<string.h>
+	"dataharc.h"
+
+1635481840 c:\users\axel\desktop\parcial1 informes\dataharc.h
+	"notebook.h"
+	"trabajo.h"
+
+1635547316 c:\users\axel\desktop\parcial1 informes\trabajo.h
+	"fecha.h"
+	"servicio.h"
+	"notebook.h"
+
+1634939651 c:\users\axel\desktop\parcial1 informes\fecha.h
+
+1635483191 c:\users\axel\desktop\parcial1 informes\servicio.h
+
+1634939593 source:c:\users\axel\desktop\parcial1 informes\fecha.c
+
+1635547576 source:c:\users\axel\desktop\parcial1 informes\inputs.c
+	"inputs.h"
+
+1635545478 source:c:\users\axel\desktop\parcial1 informes\main.c
+	<stdio.h>
+	<stdlib.h>
+	"notebook.h"
+	"servicio.h"
+	"marca.h"
+	"dataharc.h"
+	"trabajo.h"
+	"cliente.h"
+
+1635544627 source:c:\users\axel\desktop\parcial1 informes\marca.c
+	<stdio.h>
+	<stdlib.h>
+	"marca.h"
+	"ctype.h"
+	"string.h"
+
+1635548539 source:c:\users\axel\desktop\parcial1 informes\notebook.c
+	<stdio.h>
+	<stdlib.h>
+	"notebook.h"
+	<strings.h>
+	"inputs.h"
+
+1635544655 source:c:\users\axel\desktop\parcial1 informes\servicio.c
+	<stdio.h>
+	<stdlib.h>
+	"servicio.h"
+	"string.h"
+
+1635520855 source:c:\users\axel\desktop\parcial1 informes\tipo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tipo.h"
+
+1635542669 source:c:\users\axel\desktop\parcial1 informes\trabajo.c
+	<stdio.h>
+	<stdlib.h>
+	"trabajo.h"
+	"inputs.h"
+
+1635536778 source:c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	"notebook.h"
+	<strings.h>
+	"inputs.h"
+	"cliente.h"
+
+1635546539 c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\notebook.h
+	"marca.h"
+	"tipo.h"
+	"cliente.h"
+
+1635482056 c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\marca.h
+
+1635483377 c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\tipo.h
+
+1635545800 c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\cliente.h
+
+1635463302 c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\inputs.h
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"ctype.h"
+
+1635542901 source:c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\dataharc.c
+	<string.h>
+	"dataharc.h"
+
+1635481840 c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\dataharc.h
+	"notebook.h"
+	"trabajo.h"
+
+1635547316 c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\trabajo.h
+	"fecha.h"
+	"servicio.h"
+	"notebook.h"
+
+1634939651 c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\fecha.h
+
+1635483191 c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\servicio.h
+
+1634939593 source:c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\fecha.c
+
+1635547576 source:c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\inputs.c
+	"inputs.h"
+
+1635544627 source:c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\marca.c
+	<stdio.h>
+	<stdlib.h>
+	"marca.h"
+	"ctype.h"
+	"string.h"
+
+1635548539 source:c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\notebook.c
+	<stdio.h>
+	<stdlib.h>
+	"notebook.h"
+	<strings.h>
+	"inputs.h"
+
+1635544655 source:c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\servicio.c
+	<stdio.h>
+	<stdlib.h>
+	"servicio.h"
+	"string.h"
+
+1635520855 source:c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\tipo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tipo.h"
+
+1635542669 source:c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\trabajo.c
+	<stdio.h>
+	<stdlib.h>
+	"trabajo.h"
+	"inputs.h"
+
+1635548745 source:c:\users\axel\desktop\melgar axel claudio parcial parte2 informes\main.c
+	<stdio.h>
+	<stdlib.h>
+	"notebook.h"
+	"servicio.h"
+	"marca.h"
+	"dataharc.h"
+	"trabajo.h"
+	"cliente.h"
+

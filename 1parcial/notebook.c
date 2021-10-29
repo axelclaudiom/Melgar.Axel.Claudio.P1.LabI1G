@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "notebook.h"
 #include <strings.h>
+#include "inputs.h"
 int menu()
 {
     char opcion;
@@ -79,36 +80,46 @@ int altaNotebook(eNotebook notebooks[], int tam_n, eMarca marcas[], int tam_m, e
             *pId += 1;
 
             // modelo
-
-            printf("Ingrese Modelo:");
             fflush(stdin);
-            gets(auxNotebook.modelo);
+            pedirCadena("Ingrese Modelo: \n" , auxNotebook.modelo);
+           /* printf("Ingrese Modelo:");
+            fflush(stdin);
+            gets(auxNotebook.modelo);*/
 
             // marcas
             mostrarMarcas(marcas, tam_m);
 
-            printf("Ingrese ID Marca: ");
-            scanf("%d", &auxNotebook.idMarca);
+            /*printf("Ingrese ID Marca: ");
+            scanf("%d", &auxNotebook.idMarca);*/
+            auxNotebook.idMarca = getInt("\n Ingrese Id Marca: ");
+
             while(!validarIdMarca(marcas, auxNotebook.idMarca, tam_m))
             {
-                printf("Error.. Reingrese ID Marca: ");
-                scanf("%d", &auxNotebook.idMarca);
+                /*printf("Error.. Reingrese ID Marca: ");
+                scanf("%d", &auxNotebook.idMarca);*/
+                auxNotebook.idMarca = getInt("\n Error.. ReIngrese Id Marca: ");
             }
 
             // tipos
             mostrarTipos(tipos, tam_t);
 
-            printf("Ingrese ID Tipo: ");
-            scanf("%d", &auxNotebook.idTipo);
+            /*printf("Ingrese ID Tipo: ");
+            scanf("%d", &auxNotebook.idTipo);*/
+
+            auxNotebook.idTipo = getInt("\n Ingrese ID Tipo: ");
+
             while(!validarIdTipo(tipos, auxNotebook.idTipo, tam_t))
             {
-                printf("Error.. Reingrese ID Tipo: ");
-                scanf("%d", &auxNotebook.idTipo);
+                /*printf("Error.. Reingrese ID Tipo: ");
+                scanf("%d", &auxNotebook.idTipo);*/
+                auxNotebook.idTipo = getInt("\n Error.. ReIngrese ID Tipo: ");
             }
 
             // precio
-            printf("Ingrese precio:");
-            scanf("%f", &auxNotebook.precio);
+            /*printf("Ingrese precio:");
+            scanf("%f", &auxNotebook.precio);*/
+
+            auxNotebook.precio = getFloat("Ingrese precio:");
 
             auxNotebook.isEmpty = 0;
 
@@ -193,8 +204,9 @@ int modificarNotebook(eNotebook notebooks[], int tam_n, eMarca marcas[], int tam
         system("cls");
         printf("        *** Modificar Notebook *** \n\n");
         mostrarNotebooks(notebooks,tam_n, marcas, tam_n, tipos, tam_t);
-        printf("Ingrese id: ");
-        scanf("%d", &id);
+        /*printf("Ingrese id: ");
+        scanf("%d", &id);*/
+        id = getInt("\n Ingrese id: ");
         indice = buscarNotebookId(notebooks, tam_n, id);
         if (indice == -1)
         {
@@ -212,20 +224,23 @@ int modificarNotebook(eNotebook notebooks[], int tam_n, eMarca marcas[], int tam
                 switch(menuModificacion())
                 {
                 case 1:
-                    printf("Ingrese nuevo precio:");
-                    scanf("%f", &auxPrecio);
+                    /*printf("Ingrese nuevo precio:");
+                    scanf("%f", &auxPrecio);*/
+                    auxPrecio = getFloat("Ingrese precio: ");
                     notebooks[indice].precio = auxPrecio;
                     break;
                 case 2:
 
                     mostrarTipos(tipos, tam_t);
 
-                    printf("Ingrese Nuevo ID Tipo: ");
-                    scanf("%d", &auxTipo);
+                    /*printf("Ingrese Nuevo ID Tipo: ");
+                    scanf("%d", &auxTipo);*/
+                    auxTipo = getInt("\n Ingrese nuevo ID Tipo: ");
                     while(!validarIdTipo(tipos, auxTipo, tam_t))
                     {
-                        printf("Error.. Reingrese ID Tipo: ");
-                        scanf("%d", &auxTipo);
+                        /*printf("Error.. Reingrese ID Tipo: ");
+                        scanf("%d", &auxTipo);*/
+                        auxTipo = getInt("\n Ingrese nuevo ID Tipo: ");
                     }
                     notebooks[indice].idTipo = auxTipo;
 
@@ -273,8 +288,9 @@ int bajaNotebook(eNotebook notebooks[], int tam_n, eMarca marcas[], int tam_m, e
         system("cls");
         printf("        *** Baja Notebook *** \n\n");
         mostrarNotebooks(notebooks,tam_n, marcas, tam_n, tipos, tam_t);
-        printf("Ingrese id notebook: ");
-        scanf("%d", &id);
+        /*printf("Ingrese id notebook: ");
+        scanf("%d", &id);*/
+        id = getInt("\n Ingrese id Notebook: ");
         indice = buscarNotebookId(notebooks, tam_n, id);
         if (indice == -1)
         {
@@ -312,12 +328,15 @@ int ordenarNotebooks(eNotebook notebooks[], int tam_n, eMarca marcas[], int tam_
         {
             char descMarcai[20];
             cargarDescripcionMarca(marcas, tam_m, notebooks[i].idMarca, descMarcai);
+            //printf("Aca entro %s  %d\n" , descMarcai , notebooks[i].idMarca);
             for(int j= i+1; j< tam_n; j++)
             {
                 char descMarcaj[20];
                 cargarDescripcionMarca(marcas, tam_m, notebooks[j].idMarca, descMarcaj);
-                if((notebooks[i].precio > notebooks[j].precio) || (notebooks[j].precio == notebooks[j].precio && strcmp(descMarcai, descMarcaj) >0 ))
+                //printf("Aca entro %s  %d\n" , descMarcaj , notebooks[j].idMarca);
+                if((notebooks[i].precio < notebooks[j].precio) || (notebooks[j].precio == notebooks[j].precio && strcmp(descMarcai, descMarcaj) >0 ))
                 {
+                  //  printf("entra al if");
                     auxNotebook = notebooks[i];
                     notebooks[i] = notebooks[j];
                     notebooks[j] = auxNotebook;
@@ -325,6 +344,28 @@ int ordenarNotebooks(eNotebook notebooks[], int tam_n, eMarca marcas[], int tam_
             }
         }
         todoOk = 1;
+    }
+
+    return todoOk;
+}
+
+int cargarModeloNotebook(eNotebook notebooks[], int tam_n, int idNotebook, char modelo[])
+{ // devuelve 0 si no encontro nada, 1 si se valido o -1 si salio todo mal
+    int todoOk = 0;
+    int flag = 1;
+    if(notebooks != NULL && tam_n > 0 && modelo != NULL){
+        for(int i = 0; i<tam_n; i++){
+            //printf("%d %d \n" notebooks[i].id , idNotebook);
+            if(notebooks[i].id == idNotebook){
+                todoOk = 1;
+                strcpy(modelo,notebooks[i].modelo);
+                flag = 0;
+                break;
+            }
+        }
+        if(flag){
+        todoOk = -1;
+        }
     }
 
     return todoOk;
